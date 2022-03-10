@@ -1,0 +1,61 @@
+* {
+    background-color: rgb(160, 158, 156);
+}
+
+#outcome{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+#wpnChoice{
+    font-size: 30px;
+}
+
+.btn{
+    display: flex;
+    height: 150px;
+    position: relative;
+}
+
+.textCentre{
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+    border-radius: 12px;
+}
+
+.text{
+    background-color: #0497aa;
+    color: white;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.btn:hover .img{
+    opacity: 0.65;
+}
+
+.btn:hover .textCentre{
+    opacity: 1;
+}
